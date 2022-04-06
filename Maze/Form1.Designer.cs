@@ -46,19 +46,21 @@ namespace Maze
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(63, 45);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 100);
+            this.panel1.Size = new System.Drawing.Size(566, 491);
             this.panel1.TabIndex = 0;
             this.panel1.MouseEnter += new System.EventHandler(this.panel1_MouseEnter);
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.label2.Location = new System.Drawing.Point(3, 58);
+            this.label2.Location = new System.Drawing.Point(26, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 29);
             this.label2.TabIndex = 2;
