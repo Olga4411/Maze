@@ -10,31 +10,30 @@ using System.Windows.Forms;
 
 namespace Maze
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
             MoveToStart();
         }
 
-
-        private void finishlabel_MouseEnter(object sender, EventArgs e)
+        private void finish_label_MouseEnter(object sender, EventArgs e)
         {
-            MessageBox.Show("Уровень пройден");
-            Form Form2 = new Form();
+            MessageBox.Show("УРА");
+            Form2 Form2 = new Form2();
             Form2.Show();
-          //  Hide();
-
         }
+
         private void MoveToStart()
         {
-            Point startPoint = panel1.Location;
+            Point startPoint = panel2.Location;
             startPoint.Offset(10, 10);
             Cursor.Position = PointToScreen(startPoint);
         }
 
-        private void panel1_MouseEnter(object sender, EventArgs e)
+        
+        private void panel2_MouseEnter(object sender, EventArgs e)
         {
             MoveToStart();
         }
